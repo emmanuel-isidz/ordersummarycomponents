@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+:root{
+    --pale-blue:hsl(225, 100%, 94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desaturated-blue:hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+.card-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px transparent;
+    width:min(90vw,300px);
+    border-radius: 1em;
+    overflow: hidden;
+
+
+}
+img{
+    max-width: 100%;
+}
+.image-holder{background-color: white;}
+section{
+    background-color: white;
+    padding: 2rem;
+}
+article{
+    text-align: center;
+    margin-bottom: 20px;
+}
+article h1{
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+article p{
+    color: var(--desaturated-blue);
+    font-size: .8em;
+    line-height: 1.6;
+}
+.annual-payment{
+    display: flex;
+    align-items: center;
+    margin-block: 1.5rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+}
+.annual-payment h2{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+.annual-payment p,a{
+    font-size: .8rem;
+}
+.annual-payment p{
+    color: var(--desaturated-blue);
+}
+.annual-payment a{
+    color: var(--bright-blue);
+    text-decoration: none;
+    margin-left: auto;
+}
+.annual-payment{
+    margin-right: 5%;
+}
+button{
+    width: 100%;
+    margin-block: .3rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+.payment{
+    color: white;
+    background-color: var(--bright-blue);
+    border: none;
+    padding: .6em;
+    border-radius: .5em;
+    box-shadow: 0px 0px 30px 0px var(--pale-blue);
+}
+.cancel{
+    border: unset;
+    padding: .6em;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
